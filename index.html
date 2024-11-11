@@ -6,55 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web App Emergencias</title>
 
-    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
 
 <body>
 
-    <header class="menu">
-        <div class="menu__logo"></div>
-        <div class="menu__login">
-            <i class="fa-regular fa-user"></i>
-        </div>
-    </header>
+    <header class="header">
+        <nav class="header__navegacion">
+            <a class="header__navegacion-logo" href="./index.html">
+                <img class="header__navegacion-logo-imagen" src="./img/logo.png" alt="Logotipo SOS360">
+            </a>
+            <div class="header__navegacion-login">
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+        </nav>
 
-    <main>
-
-        <div class="buscador">
+        <div class="header__buscador">
             <form method="get">
-                    <input class="buscador__texto" type="text" placeholder="Buscar"/>
-                    <input class="buscador__boton" type="submit" value="Buscar"/>
+                <input class="header__buscador-texto" type="text" placeholder="Buscar" />
+                <input class="header__buscador-boton" type="submit" value="Buscar" />
             </form>
         </div>
 
-            <section class="card">
-                <a href="./pagina-catastrofe.html"><img src="./img/dana-valenica-2024.webp" alt="Dana Valencia 2024"
-                        class="card__imagen"></a>
-                <h1 class="card__titulo">DANA VALENCIA</h1>
-                <p class="card__fecha">29 de Octubre de 2024</p>
-            </section>
+    </header>
 
-            <section class="card">
-                <a href="./pagina-catastrofe.html"><img src="./img/tsunami-japon.jpg" alt="Tsunami Japón 2011"
-                        class="card__imagen"></a>
-                <h1 class="card__titulo">TSUNAMI JAPÓN</h1>
-                <p class="card__fecha">14 de Marzo de 2011</p>
-            </section>
+    
+    <main>
+        <div class="card">
+            <a href="./pagina-catastrofe.html"><img src="./img/dana-valenica-2024.webp" alt="Dana Valencia 2024"
+                    class="card__imagen"></a>
+            <h1 class="card__titulo">DANA VALENCIA</h1>
+            <p class="card__fecha">29 de Octubre de 2024 </p>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
 
-            <section class="card">
-                <a href="./pagina-catastrofe.html"><img src="./img/terremoto-turquia.avif" alt="Terremoto Turquia 2023"
-                        class="card__imagen"></a>
-                <h1 class="card__titulo card__titulo--turquia">TERREMOTO TURQUÍA</h1>
-                <p class="card__fecha">6 de Febrero de 2023</p>
-            </section>
+        <div class="card">
+            <a href="./pagina-catastrofe.html"><img src="./img/terremoto-turquia.avif" alt="Terremoto Turquia 2023"
+                    class="card__imagen"></a>
+            <h1 class="card__titulo">TERREMOTO TURQUÍA</h1>
+            <p class="card__fecha">6 de Febrero de 2023</p>
+        </div>
+
+        <div class="card">
+            <a href="./pagina-catastrofe.html"><img src="./img/terremoto-haiti.jpg" alt="Terremoto Haití 2021"
+                    class="card__imagen"></a>
+            <h1 class="card__titulo">TERREMOTO HAITÍ</h1>
+            <p class="card__fecha">14 de Agosto de 2021</p>
+            <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+
+        <div class="card">
+            <a href="./pagina-catastrofe.html"><img src="./img/erupcion-la-palma.jpg" alt="Erupción La Palma 2021"
+                    class="card__imagen"></a>
+            <h1 class="card__titulo">ERUPCIÓN LA PALMA</h1>
+            <p class="card__fecha">19 de Septiembre de 2021</p>
+            <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+
+        <div class="card">
+            <a href="./pagina-catastrofe.html"><img src="./img/pandemia-covid.webp" alt="Pandemi covid-19 2020"
+                    class="card__imagen"></a>
+            <h1 class="card__titulo">COVID-19</h1>
+            <p class="card__fecha">11 de Marzo de 2020</p>
+        </div>
+        
+        <div class="card">
+            <a href="./pagina-catastrofe.html"><img src="./img/tsunami-japon.jpg" alt="Tsunami Japón 2011"
+                    class="card__imagen"></a>
+            <h1 class="card__titulo">TSUNAMI JAPÓN</h1>
+            <p class="card__fecha">14 de Marzo de 2011</p>
+        </div>
 
     </main>
+
+    <footer class="footer">
+        EMERGENCIAS ACTIVAS
+    </footer>
 
 </body>
 
