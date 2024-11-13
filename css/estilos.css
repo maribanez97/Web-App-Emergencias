@@ -29,16 +29,12 @@
 }
 
 .header__navegacion-login{
-    width: 12rem;
     align-content: center;
+    background-color: rgb(255, 255, 255);
 }
 
 .header__navegacion-logo-imagen{
-    width: 40%;
-}
-
-.header__navegacion-login{
-    background-color: rgb(255, 255, 255);
+    width: 12rem;
 }
 
 .fa-solid{
