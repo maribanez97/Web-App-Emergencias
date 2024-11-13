@@ -3,6 +3,10 @@
     color: black;
 }
 
+.lista{
+    list-style: none;
+}
+
 .header__menu{
     display: flex;
     font-size: 0.7em;
@@ -149,9 +153,19 @@
     font-size: 0.8rem;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 650px){
     .catastrofe__puntosentrega-lista { 
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5%;
+        
+        
+        
+    }
+
+    .catastrofe__lista{
+        width: 30%;
     }
  }
